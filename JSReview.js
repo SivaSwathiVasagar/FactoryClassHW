@@ -74,3 +74,41 @@ for (let x of ninja){
    let output = x.toUpperCase();
    console.log(output)
 }
+
+///////////////// Methods, Revisited  /////////////
+// Here is a list of favMovies:
+
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// Console log: the index of Titanic
+// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+// Note: if you have to add to the array, feel free to add any movie you'd like
+
+// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+// Use the method pop
+// push"Guardians of the Galaxy"
+// Reverse the array
+// Use the shiftmethod
+// unshift- what does it return?
+// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
+// console.log your final results
+// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies[8]);
+favMovies.sort();
+favMovies.pop();
+favMovies.push("Guardians of the Galaxy");
+favMovies.reverse();
+favMovies.shift();
+favMovies.unshift();
+favMovies.indexOf("Django Unchained");
+favMovies.splice(3,1,"Avatar");
+const midpoint = Math.ceil(favMovies.length / 2);
+const firstHalf = favMovies.slice(midpoint);
+console.log(firstHalf)
+console.log(favMovies)
+favMovies.indexOf("Fast and Furious");
