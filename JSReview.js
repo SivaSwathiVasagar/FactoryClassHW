@@ -112,3 +112,24 @@ const firstHalf = favMovies.slice(midpoint);
 console.log(firstHalf)
 console.log(favMovies)
 favMovies.indexOf("Fast and Furious");
+
+
+/////////////////// Where is Waldo ////////////////
+
+// With the following multi-dimensional array
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
+// Remove Eggbert (hint look at the slice/splice method(s))
+// Change "Neff" to "No One"
+// Access and console.log "Waldo"
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+whereIsWaldo.splice(1,1)
+whereIsWaldo[1][2]="No one";
+console.log(whereIsWaldo[2][1][1])
+console.log(whereIsWaldo)
+
