@@ -133,3 +133,20 @@ whereIsWaldo[1][2]="No one";
 console.log(whereIsWaldo[2][1][1])
 console.log(whereIsWaldo)
 
+
+/////////////// Excited Kitten  ////////////////
+
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+let kittens = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
+let i = 1;
+while(i<=20){
+   console.log(` i times :  Love me, pet me! HSSSSSS!`  )
+} i++
+
+for(let i = 0; i<= 20 ;i++){
+   if(i%2 == 0){
+      let randomString = Math.floor(Math.random()*kittens.length);
+      console.log(randomString);
+   }
+}
